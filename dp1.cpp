@@ -10,7 +10,7 @@ signed main()
     dp[0]=1;//表示能凑出0面值只有一种方法:不用任何硬币
     for(auto num :{x,y,z})
     {
-        for(int j=1;j<=n;j++)
+        for(int j=num;j<=n;j++)
         {
             dp[j]=dp[j]+dp[num-j];
         }
