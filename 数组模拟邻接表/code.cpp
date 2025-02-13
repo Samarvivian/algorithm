@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//注意:用数组模拟邻接表开的数组大小应该是结点数的两倍!
 const int n=1e6+10;
 int h[n]={-1};//表示竖着的那个邻接表的头,就像单链表的头
 int value[n];//表示插入的结点值
